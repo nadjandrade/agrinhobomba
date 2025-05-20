@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #388f45; /* Verde escuro para o fundo */
+  color: #f5f0d7; /* Cor de texto suave para contraste */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  width: 80%;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #f5f0d7;
+  margin-bottom: 20px;
+}
+
+.game-area {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.plant {
+  width: 100px;
+  height: 100px;
+  background-color: #7c4b3b; /* Cor marrom para os bloquinhos de terra */
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 50px;
+  transition: transform 0.3s;
+}
+
+.plant:hover {
+  transform: scale(1.1);
+}
+
+.plant.empty {
+  background-color: #553810; /* Cor do quadrado vazio (terra) */
+}
+
+.info {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #f5f0d7; /* Cor de texto clara */
+}
+
+
